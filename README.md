@@ -9,6 +9,8 @@ This repository provides step-by-step instructions for setting up a home library
 ## Prerequisites
 - A Google Cloud account. Sign up at [Google Cloud Console](https://console.cloud.google.com/).
 - Basic knowledge of SQL and Python.
+- Google Cloud SDK installed (optional, for command-line usage).
+- CSV files for books, genres, authors, members, and loan_records.
 
 ## Steps to Set Up the Home Library Database
 
@@ -37,31 +39,72 @@ This repository provides step-by-step instructions for setting up a home library
 2. **Create a Database**:
    - Go to the **Databases** tab.
    - Click on **Create Database** and name it (e.g., `library_db`).
-3. **Create Users**:
+3. **Create Users**: (optional)
    - Go to the **Users** tab.
    - Click on **Add User Account** to create new database users as needed.
 
-### Step 5: Configure Access
-1. **Allow Connections**:
-   - Go to the **Connections** tab of your Cloud SQL instance.
-   - Under **Authorized networks**, add your client IP address or the IP range that needs access.
-   - Enable **Public IP** if necessary.
-2. **Configure SSL (Optional)**: For secure connections, consider setting up SSL in the **SSL** tab.
+### Step 5: Create the database schema
+1. **Connect to Your Cloud SQL Instance**: Use the Cloud SQL Query Editor in the Google Cloud Console.
+2. Connect using your instance’s public IP and database credentials.
+3. Create the necessary tables in your database by executing the following SQL schema in the SQL instance:
 
-### Step 6: Create a Table and Insert Data
-Use the following SQL commands to create a `books` table and insert sample data:
+-- Drop tables if they exist
+DROP TABLE IF EXISTS loan_records;
+DROP TABLE IF EXISTS members;
+DROP TABLE IF EXISTS books;
+DROP TABLE IF EXISTS genres;
+DROP TABLE IF EXISTS authors;
 
-```sql
-CREATE TABLE books (
-    id SERIAL PRIMARY KEY,
-    title VARCHAR(255),
-    author VARCHAR(255),
-    published_year INT,
-    genre VARCHAR(100)
+-- Create the authors table
+CREATE TABLE authors (
+    author_id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    birth_year INT,
+    nationality VARCHAR(100)
 );
 
-INSERT INTO books (title, author, published_year, genre) VALUES
-('1984', 'George Orwell', 1949, 'Dystopian'),
-('To Kill a Mockingbird', 'Harper Lee', 1960, 'Fiction'),
-('The Great Gatsby', 'F. Scott Fitzgerald', 1925, 'Classic');
+-- Create the genres table
+CREATE TABLE genres (
+    genre_id SERIAL PRIMARY KEY,
+    genre_name VARCHAR(100) NOT NULL UNIQUE
+);
 
+-- Create the books table
+CREATE TABLE books (
+    book_id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author_id INT REFERENCES authors(author_id) ON DELETE CASCADE,
+    published_year INT,
+    genre_id INT REFERENCES genres(genre_id) ON DELETE SET NULL,
+    isbn VARCHAR(20) UNIQUE,
+    available_copies INT DEFAULT 1
+);
+
+-- Create the members table
+CREATE TABLE members (
+    member_id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE,
+    phone VARCHAR(20),
+    join_date DATE DEFAULT CURRENT_DATE
+);
+
+-- Create the loan records table
+CREATE TABLE loan_records (
+    loan_id SERIAL PRIMARY KEY,
+    member_id INT REFERENCES members(member_id) ON DELETE CASCADE,
+    book_id INT REFERENCES books(book_id) ON DELETE CASCADE,
+    loan_date DATE DEFAULT CURRENT_DATE,
+    return_date DATE,
+    due_date DATE
+);
+
+### Step 6: Upload Data from CSV Files to Google Cloud SQL Using Google Cloud Console
+1. **Access the Instance**: Click on the created instance name in the SQL Instances dashboard.
+2. **Import CSV Data**:
+   - Click on Import and provide the path to your CSV file stored in Google Cloud Storage (GCS).
+   - If your files are not yet in GCS, upload them to a bucket.
+3. **Import CSV Files**:
+   - Specify the CSV file path (e.g., gs://your-bucket-name/authors.csv) and select the target database.
+   - Click Import.
+   - Follow the same process for each CSV file (authors, genres, books, members, loan_records).
