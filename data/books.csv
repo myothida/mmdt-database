@@ -1,101 +1,100 @@
-bookid,title,authorid,genreid,publisheddate,isbn,pages
-1,Automated holistic standardization,27,61,2014-02-14,978-1-81309-190-4,885
-2,Pre-emptive incremental artificial intelligence,59,24,2009-02-06,978-0-532-49597-0,136
-3,Cross-platform 24hour frame,81,47,2022-05-11,978-1-82018-040-0,815
-4,Automated tangible Local Area Network,30,77,2017-01-22,978-0-465-07253-8,472
-5,Programmable maximized synergy,98,4,2011-09-25,978-0-288-28431-6,385
-6,Balanced full-range focus group,79,48,2003-01-10,978-1-310-33792-5,511
-7,Up-sized 5thgeneration artificial intelligence,31,100,2004-03-30,978-0-441-42310-1,389
-8,Ergonomic needs-based installation,36,18,2015-07-10,978-0-234-57504-8,391
-9,Front-line background flexibility,23,61,2002-09-06,978-1-346-11425-5,483
-10,Triple-buffered holistic workforce,97,98,2006-10-24,978-1-4566-2020-2,779
-11,Open-architected logistical open architecture,8,14,2011-09-01,978-1-73044-930-7,584
-12,Seamless interactive protocol,53,100,2004-07-08,978-1-5316-2721-8,919
-13,Streamlined contextually-based frame,62,90,2022-09-03,978-0-333-00877-5,525
-14,Innovative directional paradigm,36,47,2001-11-17,978-0-7040-8706-4,668
-15,Profound real-time toolset,60,5,2002-11-20,978-0-675-81856-8,410
-16,Persevering contextually-based portal,58,80,2014-06-01,978-0-556-83802-9,362
-17,Focused national moratorium,30,44,2005-03-18,978-0-7070-0649-9,135
-18,Reactive full-range product,64,19,2011-03-02,978-1-57966-998-0,998
-19,Vision-oriented systematic structure,23,98,2010-11-10,978-1-269-53060-6,187
-20,Fundamental systemic strategy,8,57,2013-09-16,978-1-5388-0419-3,879
-21,Exclusive tertiary collaboration,98,41,2023-02-20,978-1-00-496788-9,551
-22,Devolved scalable data-warehouse,68,13,2016-02-26,978-1-181-08029-6,293
-23,Grass-roots user-facing utilization,96,100,2011-02-08,978-1-09-762311-2,485
-24,Exclusive bi-directional toolset,37,36,2022-04-25,978-1-5200-7906-6,749
-25,Exclusive optimizing success,64,5,2004-07-20,978-1-83849-412-4,392
-26,Customer-focused optimal projection,95,42,2015-11-28,978-1-74554-251-2,657
-27,Virtual asynchronous workforce,37,42,2010-06-14,978-1-354-79617-7,349
-28,Monitored interactive paradigm,93,46,2011-05-07,978-0-260-06066-2,941
-29,Fully-configurable directional hierarchy,84,90,2016-07-15,978-0-597-79143-7,509
-30,Realigned stable task-force,46,42,2004-03-11,978-1-63202-613-2,751
-31,Innovative tangible definition,11,91,2010-09-05,978-0-611-20012-9,463
-32,User-centric multi-state Internet solution,82,92,2009-10-20,978-0-05-722871-8,577
-33,Assimilated zero administration algorithm,15,39,2006-01-22,978-0-07-328867-3,550
-34,Operative content-based policy,44,69,2000-05-15,978-0-429-73637-7,348
-35,Self-enabling responsive groupware,33,2,2009-04-28,978-1-4102-1729-5,327
-36,Upgradable real-time archive,67,48,2017-03-10,978-0-522-19051-9,636
-37,Vision-oriented value-added data-warehouse,46,61,2001-06-18,978-0-309-56913-2,487
-38,Operative contextually-based software,44,61,2022-04-05,978-0-9564528-6-3,796
-39,De-engineered incremental protocol,7,95,2014-09-09,978-0-12-770055-7,511
-40,Fully-configurable user-facing methodology,23,81,2006-05-26,978-1-189-33370-7,733
-41,Innovative bi-directional complexity,90,26,2014-03-08,978-1-328-49662-1,654
-42,Networked real-time task-force,16,24,2004-10-05,978-1-5420-2676-5,215
-43,Synergized incremental knowledgebase,47,88,2021-12-27,978-0-88734-698-9,383
-44,Devolved analyzing groupware,86,45,2014-06-07,978-1-249-67686-7,641
-45,Stand-alone transitional installation,78,67,2013-09-25,978-0-900958-57-1,731
-46,Ameliorated non-volatile benchmark,58,76,2002-05-07,978-1-70000-055-2,266
-47,Diverse context-sensitive attitude,35,98,2000-04-03,978-0-463-31801-0,643
-48,Exclusive disintermediate software,94,61,2022-03-02,978-1-230-39668-2,699
-49,Business-focused uniform interface,59,12,2006-07-25,978-1-343-43939-9,509
-50,User-centric tangible moderator,67,98,2000-10-19,978-1-353-73507-8,460
-51,Total bottom-line neural-net,81,48,2011-05-06,978-1-942908-53-1,413
-52,Triple-buffered zero tolerance implementation,32,72,2016-09-26,978-0-677-74483-4,964
-53,Streamlined directional info-mediaries,87,17,2008-11-02,978-1-143-65202-8,541
-54,Business-focused didactic framework,84,50,2007-11-16,978-0-7070-4086-8,920
-55,Fully-configurable multi-state paradigm,75,8,2001-05-24,978-0-08-007602-7,906
-56,Seamless dynamic frame,69,71,2006-09-01,978-0-7026-4181-7,522
-57,Triple-buffered multi-state project,1,34,2010-10-19,978-0-314-23242-7,854
-58,Implemented heuristic extranet,33,49,2020-06-08,978-1-292-45151-0,899
-59,Adaptive optimal task-force,47,69,2013-12-22,978-0-242-78063-2,112
-60,Down-sized user-facing open architecture,74,33,2006-09-11,978-1-348-48605-3,223
-61,Streamlined upward-trending process improvement,56,29,2015-02-10,978-0-7382-8508-5,108
-62,Up-sized 5thgeneration hardware,89,84,2002-02-03,978-0-87182-071-6,664
-63,Exclusive executive concept,7,34,2004-03-19,978-0-388-24643-6,427
-64,Enterprise-wide background Internet solution,57,89,2018-06-09,978-1-4979-4253-0,456
-65,Digitized coherent conglomeration,4,92,2018-05-31,978-1-926012-79-7,407
-66,Synergized maximized approach,57,31,2006-10-02,978-1-83852-906-2,485
-67,Networked bifurcated focus group,12,59,2003-09-02,978-1-85917-807-2,226
-68,Integrated dynamic complexity,61,60,2003-05-21,978-0-631-06084-0,164
-69,Secured analyzing synergy,28,89,2007-11-13,978-1-69126-405-6,556
-70,Inverse mobile methodology,45,15,2014-09-22,978-0-460-10261-2,505
-71,Organic system-worthy synergy,70,24,2007-06-03,978-0-11-559612-4,662
-72,Quality-focused multi-tasking Graphic Interface,80,55,2018-08-04,978-0-9594323-5-0,853
-73,Horizontal mobile capacity,11,66,2019-10-07,978-1-192-45255-6,777
-74,Triple-buffered optimal archive,45,31,2003-02-02,978-0-7552-9923-2,721
-75,Open-source didactic emulation,43,82,2020-09-30,978-0-537-46072-0,277
-76,Programmable needs-based definition,19,95,2009-08-21,978-1-4832-6747-0,968
-77,Reactive client-server application,65,73,2019-10-06,978-0-07-866988-0,486
-78,Switchable methodical encoding,14,32,2004-11-12,978-1-185-65555-1,729
-79,Inverse real-time protocol,72,6,2004-07-13,978-0-03-475053-9,649
-80,Re-contextualized fault-tolerant Internet solution,70,45,2013-08-09,978-1-9756-7767-1,253
-81,Future-proofed full-range architecture,43,61,2000-05-13,978-1-03-722952-7,739
-82,Customizable homogeneous protocol,8,53,2023-10-19,978-1-76793-379-4,727
-83,Upgradable disintermediate solution,86,32,2024-07-29,978-1-903455-78-4,908
-84,Profound high-level product,20,47,2023-01-09,978-1-939752-37-6,985
-85,Proactive solution-oriented initiative,12,45,2008-03-27,978-0-87040-960-8,937
-86,Total zero-defect approach,28,81,2015-04-11,978-0-637-61360-6,310
-87,Reactive client-server data-warehouse,84,47,2007-10-26,978-1-890520-95-3,370
-88,Visionary homogeneous website,45,28,2014-12-02,978-1-267-43451-7,229
-89,Innovative bifurcated strategy,96,21,2004-12-12,978-0-669-38188-7,410
-90,Universal mobile customer loyalty,53,100,2001-01-19,978-1-79428-114-1,193
-91,Realigned user-facing access,10,91,2014-01-04,978-0-346-81752-4,383
-92,Re-engineered client-driven database,73,52,2016-08-03,978-0-556-73923-4,483
-93,Self-enabling next generation knowledgebase,87,33,2011-08-16,978-0-309-41759-4,765
-94,Reactive maximized implementation,28,37,2011-01-12,978-1-61397-676-0,718
-95,Exclusive real-time Graphic Interface,10,2,2005-08-13,978-1-940556-44-4,255
-96,Triple-buffered methodical encryption,36,62,2001-02-01,978-1-58416-808-9,707
-97,Ameliorated object-oriented migration,39,62,2023-02-07,978-0-923452-53-7,573
-98,Realigned didactic website,25,32,2016-07-07,978-0-465-18326-5,792
-99,Persevering even-keeled approach,84,97,2012-11-03,978-0-316-87356-7,289
-100,Sharable fault-tolerant alliance,8,62,2023-02-01,978-1-74045-974-7,557
+1,Multi-channeled homogeneous structure,83,16,2024-05-02,978-1-283-39647-9,773
+2,Digitized contextually-based solution,81,22,2000-06-06,978-0-533-48531-4,377
+3,Programmable heuristic adapter,90,94,2024-06-20,978-1-5368-8418-0,154
+4,Advanced encompassing methodology,34,43,2022-09-05,978-1-69201-859-7,469
+5,Fundamental incremental productivity,48,81,2001-01-02,978-0-85794-425-2,958
+6,Sharable client-driven access,17,100,2021-04-16,978-0-346-57037-5,888
+7,Upgradable value-added capacity,4,92,2005-10-13,978-0-594-36554-9,222
+8,Business-focused bottom-line product,64,94,2016-08-21,978-0-7004-4689-6,270
+9,Adaptive secondary solution,32,73,2013-04-30,978-1-144-07613-7,750
+10,Compatible multi-state open architecture,41,65,2013-04-03,978-0-341-80161-0,323
+11,Robust dynamic core,28,86,2011-04-28,978-1-305-92058-3,362
+12,Managed mission-critical frame,48,5,2023-08-08,978-0-09-988456-9,345
+13,Enhanced dynamic initiative,3,73,2021-06-09,978-1-353-39705-4,732
+14,Optimized responsive collaboration,17,43,2010-06-06,978-1-72359-367-3,523
+15,Synergistic leadingedge data-warehouse,92,80,2001-04-26,978-0-07-500496-7,295
+16,Intuitive context-sensitive projection,16,21,2016-07-11,978-1-71028-903-9,851
+17,Optimized analyzing info-mediaries,55,81,2011-09-30,978-0-08-709604-2,351
+18,Realigned tangible leverage,42,63,2009-12-22,978-1-165-68528-8,483
+19,Horizontal disintermediate firmware,42,43,2004-02-15,978-1-375-80489-9,748
+20,Team-oriented needs-based utilization,4,27,2005-10-05,978-0-546-93113-6,475
+21,Function-based attitude-oriented definition,39,31,2018-06-12,978-0-321-37946-7,693
+22,Implemented intangible algorithm,47,89,2017-10-14,978-1-84703-298-0,466
+23,Grass-roots static solution,50,5,2014-07-12,978-1-63262-350-8,440
+24,Right-sized directional neural-net,4,43,2000-01-04,978-0-271-62685-7,453
+25,Customizable bi-directional customer loyalty,91,10,2001-09-11,978-0-922894-08-6,578
+26,Configurable full-range instruction set,29,27,2022-11-11,978-0-15-179834-6,326
+27,Compatible non-volatile encoding,1,82,2006-07-23,978-1-201-93406-6,653
+28,User-centric dynamic leverage,57,23,2020-05-20,978-1-898117-89-6,152
+29,Organized maximized system engine,2,6,2014-07-03,978-1-967427-13-0,650
+30,Fully-configurable national hierarchy,83,12,2020-09-06,978-1-78836-747-9,139
+31,Enhanced holistic help-desk,81,44,2020-07-04,978-1-887736-81-7,716
+32,Virtual bottom-line utilization,49,9,2000-05-20,978-0-621-36920-5,365
+33,Persistent transitional time-frame,96,13,2007-04-29,978-0-13-777433-3,367
+34,Synergistic contextually-based archive,81,29,2006-09-02,978-1-914062-69-8,444
+35,Down-sized intermediate throughput,60,86,2008-09-05,978-0-03-410923-8,911
+36,Synergized value-added capacity,85,100,2012-04-21,978-0-672-99082-3,380
+37,Visionary hybrid customer loyalty,41,69,2023-12-23,978-0-582-64889-0,357
+38,Team-oriented responsive info-mediaries,74,92,2013-06-03,978-1-68603-479-4,246
+39,De-engineered analyzing encoding,58,20,2016-05-22,978-1-349-49624-2,886
+40,Stand-alone 5thgeneration moratorium,62,41,2017-06-13,978-1-56881-091-1,923
+41,Function-based solution-oriented initiative,80,77,2015-07-13,978-0-87256-058-1,753
+42,Persevering asynchronous intranet,75,40,2009-07-16,978-1-4743-5613-8,512
+43,Managed transitional open architecture,97,23,2017-04-12,978-0-8015-7980-6,179
+44,Organized fresh-thinking benchmark,56,9,2005-06-18,978-1-4221-7888-1,243
+45,Intuitive web-enabled approach,30,43,2007-03-12,978-0-940883-76-5,674
+46,Distributed bifurcated methodology,32,46,2021-08-04,978-0-89809-701-6,852
+47,Intuitive background workforce,43,94,2000-08-30,978-0-286-66333-5,876
+48,De-engineered systematic success,64,28,2019-08-08,978-1-58502-248-9,150
+49,Total mobile contingency,41,94,2004-06-23,978-1-08-429268-0,286
+50,Switchable object-oriented knowledgebase,93,16,2008-07-02,978-1-4602-8402-5,855
+51,Right-sized homogeneous strategy,59,14,2010-12-09,978-0-678-92880-6,217
+52,Centralized non-volatile emulation,80,65,2020-06-21,978-0-916139-79-7,297
+53,Synergistic holistic ability,58,26,2014-08-24,978-0-88320-725-3,131
+54,Networked analyzing product,86,50,2007-03-26,978-1-912269-98-3,210
+55,Progressive intangible interface,80,66,2019-09-14,978-0-19-016692-2,142
+56,Persistent upward-trending framework,82,38,2007-03-08,978-0-659-59223-1,270
+57,Visionary heuristic approach,63,93,2023-03-18,978-1-84260-765-7,513
+58,Customizable maximized moderator,7,98,2016-06-09,978-1-9841-2999-4,415
+59,Re-contextualized upward-trending initiative,83,12,2013-04-18,978-0-03-476263-1,900
+60,Advanced motivating ability,89,80,2017-08-02,978-1-75985-994-1,118
+61,Phased mission-critical strategy,87,78,2004-09-29,978-1-219-79256-6,309
+62,Programmable intangible function,61,66,2016-08-09,978-0-19-872338-7,314
+63,Innovative 5thgeneration orchestration,56,58,2018-11-04,978-0-631-49257-3,117
+64,Extended eco-centric middleware,34,16,2016-06-27,978-0-433-62894-1,656
+65,Customer-focused global software,23,81,2005-04-10,978-0-7043-8036-3,937
+66,Total grid-enabled paradigm,66,59,2019-05-23,978-0-408-82551-1,400
+67,Centralized multimedia interface,85,36,2001-06-24,978-0-511-94341-6,973
+68,Diverse uniform groupware,22,72,2000-12-24,978-1-339-26436-3,726
+69,Adaptive empowering synergy,95,89,2021-07-16,978-0-331-48035-1,838
+70,Fundamental high-level methodology,70,95,2002-01-12,978-1-08-278310-4,610
+71,Balanced directional moderator,50,5,2022-08-16,978-0-638-55167-9,471
+72,Ergonomic actuating matrix,61,55,2006-05-31,978-1-323-80074-4,978
+73,Expanded zero-defect algorithm,26,45,2016-07-19,978-0-13-342976-3,301
+74,Inverse eco-centric moderator,34,56,2016-09-13,978-0-278-01158-8,523
+75,Assimilated client-server middleware,65,14,2012-09-22,978-1-316-92679-6,462
+76,Triple-buffered heuristic Graphical User Interface,80,31,2016-03-17,978-1-358-39080-7,264
+77,Adaptive holistic emulation,94,51,2012-07-18,978-1-7336124-6-3,514
+78,Visionary upward-trending intranet,90,90,2019-02-21,978-1-04-410885-3,857
+79,Multi-tiered didactic pricing structure,18,46,2002-05-25,978-1-5419-8900-9,446
+80,Compatible clear-thinking migration,85,64,2013-02-04,978-1-4986-9188-8,123
+81,Configurable 6thgeneration capability,32,15,2011-08-04,978-1-03-533006-5,224
+82,Grass-roots human-resource toolset,34,62,2007-01-17,978-1-4122-5547-9,246
+83,Ergonomic discrete functionalities,12,61,2024-04-17,978-0-7842-4119-6,631
+84,Synergized 4thgeneration service-desk,60,39,2000-11-28,978-1-64760-923-8,239
+85,Configurable non-volatile moratorium,87,34,2008-10-10,978-0-609-58120-9,787
+86,Face-to-face encompassing knowledgebase,25,60,2024-07-01,978-0-218-14872-5,902
+87,Virtual asynchronous policy,78,52,2004-01-08,978-0-04-458767-5,174
+88,Right-sized bandwidth-monitored definition,44,98,2001-08-01,978-0-7780-8191-3,464
+89,Up-sized directional pricing structure,46,9,2007-04-13,978-0-634-14582-7,757
+90,Secured reciprocal alliance,58,31,2023-08-04,978-1-267-48849-7,637
+91,Triple-buffered zero-defect interface,53,1,2008-06-13,978-1-121-67316-8,195
+92,Seamless local adapter,94,16,2019-12-27,978-0-01-482372-7,501
+93,Total bifurcated website,11,83,2002-04-10,978-1-325-73581-5,606
+94,Intuitive maximized capability,16,26,2018-01-21,978-0-11-412465-6,442
+95,Integrated context-sensitive algorithm,87,93,2013-06-02,978-0-571-76068-8,347
+96,Profit-focused empowering function,81,23,2001-10-05,978-1-78973-859-9,479
+97,Business-focused explicit flexibility,73,6,2015-10-25,978-0-9720535-8-7,731
+98,Balanced foreground info-mediaries,70,56,2001-02-04,978-0-87066-650-6,679
+99,Synergistic heuristic knowledgebase,68,74,2008-12-20,978-1-4184-7653-3,634
+100,Configurable tangible monitoring,90,48,2012-10-14,978-0-916246-07-5,475
