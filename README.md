@@ -46,58 +46,7 @@ This repository provides step-by-step instructions for setting up a home library
 ### Step 5: Create the database schema
 1. **Connect to Your Cloud SQL Instance**: Use the Cloud SQL Query Editor in the Google Cloud Console.
 2. Connect using your instance’s public IP and database credentials.
-3. Create the necessary tables in your database by executing the following SQL schema in the SQL instance:
-
--- Drop tables if they exist
-DROP TABLE IF EXISTS loan_records;
-DROP TABLE IF EXISTS members;
-DROP TABLE IF EXISTS books;
-DROP TABLE IF EXISTS genres;
-DROP TABLE IF EXISTS authors;
-
--- Create the authors table
-CREATE TABLE authors (
-    author_id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    birth_year INT,
-    nationality VARCHAR(100)
-);
-
--- Create the genres table
-CREATE TABLE genres (
-    genre_id SERIAL PRIMARY KEY,
-    genre_name VARCHAR(100) NOT NULL UNIQUE
-);
-
--- Create the books table
-CREATE TABLE books (
-    book_id SERIAL PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    author_id INT REFERENCES authors(author_id) ON DELETE CASCADE,
-    published_year INT,
-    genre_id INT REFERENCES genres(genre_id) ON DELETE SET NULL,
-    isbn VARCHAR(20) UNIQUE,
-    available_copies INT DEFAULT 1
-);
-
--- Create the members table
-CREATE TABLE members (
-    member_id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE,
-    phone VARCHAR(20),
-    join_date DATE DEFAULT CURRENT_DATE
-);
-
--- Create the loan records table
-CREATE TABLE loan_records (
-    loan_id SERIAL PRIMARY KEY,
-    member_id INT REFERENCES members(member_id) ON DELETE CASCADE,
-    book_id INT REFERENCES books(book_id) ON DELETE CASCADE,
-    loan_date DATE DEFAULT CURRENT_DATE,
-    return_date DATE,
-    due_date DATE
-);
+3. Create the necessary tables in your database by executing the SQL schema in the SQL instance.
 
 ### Step 6: Upload Data from CSV Files to Google Cloud SQL Using Google Cloud Console
 1. **Access the Instance**: Click on the created instance name in the SQL Instances dashboard.
