@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=e:\Projects\mmdt-database\.venv
+set VIRTUAL_ENV=d:\09_Project_2024\09_SQL\mmdt-database\.venv
 
 if not defined PROMPT set PROMPT=$P$G
 
