@@ -1,59 +1,59 @@
 # mmdt-database
-Instructions for setting up a home library database in Google Cloud and accessing it using SQL and Python.
 
-# Home Library Database Setup in Google Cloud
+**Instructions for setting up a home library database in Microsoft Azure Cloud and accessing it using SQL and Python.**
 
-## Overview
-This repository provides step-by-step instructions for setting up a home library database in Google Cloud SQL using PostgreSQL. Students will learn how to create a database, populate it with data, and access it using SQL queries from Python.
+---
+![alt text](image.png)
 
-## Prerequisites
-- A Google Cloud account. Sign up at [Google Cloud Console](https://console.cloud.google.com/).
+## Prerequisites:
+- A Microsoft Azure account. If you don't have one, you can create a free account [here](https://azure.microsoft.com/free/).
 - Basic knowledge of SQL and Python.
-- Google Cloud SDK installed (optional, for command-line usage).
-- CSV files for books, genres, authors, members, and loan_records.
+- Azure Data Studio (optional but recommended) to manage your database graphically.
 
-## Steps to Set Up the Home Library Database
+---
 
-### Step 1: Create a Google Cloud Project
-1. **Access the Console**: Go to [Google Cloud Console](https://console.cloud.google.com/).
-2. **Create Project**: Click on the project dropdown in the top left corner and select **New Project**.
-3. **Enter Details**: Provide a name for your project (e.g., `Home Library Database`) and click **Create**.
+## 1. Set Up Your SQL Database in Azure
 
-### Step 2: Enable the Cloud SQL API
-1. Navigate to **APIs & Services** > **Library** in the Cloud Console.
-2. Search for **Cloud SQL Admin API** and click **Enable**.
+### Step 1: Create an Azure SQL Database
+1. Sign in to the [Azure Portal](https://portal.azure.com/).
+2. In the left-hand menu, click on **Create a resource**.
+3. Search for **SQL Database** and select it.
+4. Fill in the required information:
+   - **Subscription**: Choose your subscription.
+   - **Resource Group**: Create a new resource group or select an existing one.
+   - **Database Name**: Name your database, e.g., `LibraryDB`.
+   - **Server**: You can either create a new server or use an existing one.
+   - **Compute + Storage**: Choose the performance and storage level that fits your needs.
+   - **Authentication method**: SQL authentication or Azure Active Directory.
+5. Click **Review + Create**, then click **Create**.
 
-### Step 3: Create a Cloud SQL Instance
-1. In the Cloud Console, navigate to **Databases** > **SQL**.
-2. Click on **Create Instance**.
-3. Choose **PostgreSQL** as the database engine.
-4. **Configure Instance**:
-   - **Instance ID**: Choose a unique ID (e.g., `home-library-instance`).
-   - **Root Password**: Set a strong password for the default user.
-   - **Region and Zone**: Select your preferred region and zone.
-   - **Database Version**: Choose the desired PostgreSQL version.
-5. Click **Create**.
+### Step 2: Configure Firewall Rules
+1. After your SQL database is deployed, go to the **SQL Server** resource from the Azure portal.
+2. On the left-hand panel, under **Security**, click on **Networking**.
+3. Add your local IP address or the IP range of your college network to the **Firewall rules** section to allow access to your database.
+   - Example firewall rule:
+     - Rule name: `LibraryAccess`
+     - Start IP: `10.3.0.1`
+     - End IP: `10.3.0.254`
+4. Click **Save**.
 
-### Step 4: Set Up the Database and Users
-1. **Access the Instance**: Click on the created instance name in the SQL Instances dashboard.
-2. **Create a Database**:
-   - Go to the **Databases** tab.
-   - Click on **Create Database** and name it (e.g., `library_db`).
-3. **Create Users**: (optional)
-   - Go to the **Users** tab.
-   - Click on **Add User Account** to create new database users as needed.
+---
 
-### Step 5: Create the database schema
-1. **Connect to Your Cloud SQL Instance**: Use the Cloud SQL Query Editor in the Google Cloud Console.
-2. Connect using your instance’s public IP and database credentials.
-3. Create the necessary tables in your database by executing the SQL schema in the SQL instance.
+## 2. Access the Database with SQL
 
-### Step 6: Upload Data from CSV Files to Google Cloud SQL Using Google Cloud Console
-1. **Access the Instance**: Click on the created instance name in the SQL Instances dashboard.
-2. **Import CSV Data**:
-   - Click on Import and provide the path to your CSV file stored in Google Cloud Storage (GCS).
-   - If your files are not yet in GCS, upload them to a bucket.
-3. **Import CSV Files**:
-   - Specify the CSV file path (e.g., gs://your-bucket-name/authors.csv) and select the target database.
-   - Click Import.
-   - Follow the same process for each CSV file (authors, genres, books, members, loan_records).
+### Option 1: Using Azure Data Studio
+1. **Install Azure Data Studio** from [here](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio).
+2. Open Azure Data Studio and click on **New Connection**.
+3. Enter your connection details:
+   - **Server name**: `<Your Server Name>.database.windows.net`.
+   - **Authentication**: SQL Server Authentication or Azure AD Authentication.
+   - **Username/Password**: The credentials you created earlier.
+4. Click **Connect**.
+5. After connecting, open a new query editor and start running SQL queries to manage your database. For example:
+   ```sql
+   CREATE TABLE Books (
+     BookID INT PRIMARY KEY,
+     Title NVARCHAR(100),
+     Author NVARCHAR(100),
+     PublishedYear INT
+   );
